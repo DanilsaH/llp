@@ -1,7 +1,20 @@
 body {
     font-family: 'Nunito', sans-serif;
-    background: linear-gradient(135deg, beige, #ffffff);
+    background-color: beige;
+    padding: 5px;
 }
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.navbar li:hover {
+    background-color: #eae4e4;
+}
+
+
 
 .bg-gradient {
     background: linear-gradient(135deg, #007BFF, #00C6FF);
@@ -167,10 +180,10 @@ footer {
 
 
 .card-title {
-    background-color: blueviolet;
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
     border-radius: 7px;
-    color: white;
-    box-shadow: #453d3d 5px 2px 80px;
+    color: rgb(54, 54, 54);
+    box-shadow: #b28a8a 5px 2px 80px;
 }
 
 
@@ -230,8 +243,13 @@ footer {
     /* Deixa a imagem circular */
     margin-right: 20px;
 }
-}
 
+.grupos {
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+}
 
 
 
@@ -314,4 +332,214 @@ footer {
     height: 100%;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     /* Vinheta suave */
+}
+
+
+
+
+.pacote1 img {
+    width: 300px;
+    height: 330px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    position: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: #816666 5px 5px 5px;
+}
+
+.pacote1 img {
+    border: none;
+    transition: transform 0.03s ease;
+}
+
+.pacote1 img:hover {
+    transform: scale(1.05);
+}
+
+
+.pacote2 img {
+    width: 300px;
+    height: 330px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    position: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: #816666 5px 5px 5px;
+
+}
+
+.pacote2 img {
+    border: none;
+    transition: transform 0.93s ease;
+}
+
+.pacote2 img:hover {
+    transform: scale(1.05);
+}
+
+.pacote3 img {
+    width: 300px;
+    height: 330px;
+    transition: transform 0.3s;
+    position: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: #816666 5px 5px 5px;
+
+}
+
+.pacote3 img {
+    border: none;
+    transition: transform 0.02s ease;
+}
+
+.pacote3 img:hover {
+    transform: scale(1.05);
+}
+
+
+.packs {
+    display: flex;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 30px;
+    align-content: center;
+    justify-content: space-between;
+    border: none;
+}
+
+
+
+
+
+
+
+.grupos {
+    margin-left: 35%;
+
+}
+
+.grupos1 {
+    margin-left: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#side_items {
+    list-style: none;
+    padding: 0;
+}
+
+#side_items li {
+    padding: 10px;
+}
+
+#side_items li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+#side_items li i {
+    margin-right: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        top: 0;
+        left: 0;
+        /* cor de fundo opcional */
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        /* Centraliza os itens */
+
+    }
+
+    #side_items {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS para o menu ocupar 100% da largura */
+#sidebar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* cor de fundo opcional */
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    /* Centraliza os itens */
+}
+
+#side_items {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* Espaçamento entre os itens */
+    padding: 0;
+    margin: 0;
+}
+
+#side_items li {
+    padding: 10px 0;
+}
+
+#side_items li a {
+    color: rgb(0, 0, 0);
+    /* Cor do texto */
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+#side_items li a i {
+    margin-right: 8px;
+    /* Espaçamento entre o ícone e o texto */
+}
+
+/* Estilo para responsividade (opcional) */
+@media (max-width: 768px) {
+    #side_items {
+        flex-direction: column;
+        align-items: center;
+    }
 }
